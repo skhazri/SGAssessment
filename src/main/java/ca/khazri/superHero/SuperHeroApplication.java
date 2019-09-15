@@ -41,7 +41,7 @@ public class SuperHeroApplication implements CommandLineRunner
 		mission1.getHeroes().add(superHero );
 		mission1.getHeroes().add(superHero );
 
-		superHeroRepository.save ( superHero );
+		//superHeroRepository.save ( superHero );
 
 	}
 }
