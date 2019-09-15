@@ -85,15 +85,15 @@ public class MissionRepositoryTest {
         // then
         assertThat(foundMissions.size ()).isEqualTo (3);
 
-        assertThat(foundMissions.get(0).getId()).isEqualTo(1);
+        assertThat(foundMissions.get(0).getId()).isEqualTo(mission1.getId ());
         assertThat(foundMissions.get(0).getMissionName()).isEqualTo("mission1");
         assertThat(foundMissions.get(0).getIsCompleted ()).isEqualTo(true);
         assertThat(foundMissions.get(0).getIsDeleted ()).isEqualTo(true);
-        assertThat(foundMissions.get(1).getId()).isEqualTo(2);
+        assertThat(foundMissions.get(1).getId()).isEqualTo(mission2.getId ());
         assertThat(foundMissions.get(1).getMissionName()).isEqualTo("mission2");
         assertThat(foundMissions.get(1).getIsCompleted ()).isEqualTo(true);
         assertThat(foundMissions.get(1).getIsDeleted ()).isEqualTo(true);
-        assertThat(foundMissions.get(2).getId()).isEqualTo(3);
+        assertThat(foundMissions.get(2).getId()).isEqualTo(mission3.getId ());
         assertThat(foundMissions.get(2).getMissionName()).isEqualTo("mission3");
         assertThat(foundMissions.get(2).getIsCompleted ()).isEqualTo(true);
         assertThat(foundMissions.get(2).getIsDeleted ()).isEqualTo(false);
