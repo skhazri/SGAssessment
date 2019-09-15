@@ -183,7 +183,7 @@ public class SuperHeroServiceTest {
     @Test
     public void removeSuperHeroMission ( ) {
 
-        //Success Example
+        //Success case
         // given
         SuperHero superHero = new SuperHero(1L, "FirstName","LastName", "SuperHeroName");
         Mission mission = new Mission(1L, " mission",false, false);
@@ -198,14 +198,13 @@ public class SuperHeroServiceTest {
         assertThat(apiResponse.getSuccess()).isEqualTo(true);
         assertThat(apiResponse.getMessages().get ( 0 )).isEqualTo("Mission removed from Superhero");
 
-        //Failure Example
+        //Failure CASE
         // given
         Mission completedMission = new Mission(1L, " mission",true, false);
         ApiResponse errorResponse = new ErrorResponse ( "Unable to remove a completed mission");
-//
+
         // when
         when(superHeroService.removeSuperHeroMission (superHero.getId (),mission.getId ())).thenReturn(errorResponse);
-//
         // then
         ApiResponse FailedApiResponse = superHeroService.removeSuperHeroMission (superHero.getId (),mission.getId ());
         assertThat(FailedApiResponse.getSuccess()).isEqualTo(false);

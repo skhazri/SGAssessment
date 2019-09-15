@@ -27,8 +27,6 @@ import static org.mockito.Mockito.when;
 
 public class MissionServiceTest {
 
-//    @Autowired
-//    private MissionService missionService;
 
     @MockBean
     private MissionRepository missionRepository;
@@ -46,7 +44,7 @@ public void setup(){
     @Test
     public void findAllMissions ( ) {
 
-//        // when
+         // when
         List<Mission> missions = new ArrayList<Mission> ();
         missions.add(new Mission (1L, "mission1", false, false ));
         missions.add(new Mission (2L,"mission2", false, false ));
@@ -148,4 +146,3 @@ public void setup(){
     }
 }
 
-//
