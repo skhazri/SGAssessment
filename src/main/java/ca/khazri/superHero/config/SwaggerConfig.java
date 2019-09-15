@@ -28,7 +28,7 @@ public class SwaggerConfig {
     private ApiInfo apiInfo() {
         return new ApiInfo(
                 "Super Hero Company REST API",
-                "Custom description of Super Hero Company REST API",
+                "Super Hero Company REST API",
                 "0.0.1-SNAPSHOT",
                 "Terms of service",
                  new Contact ("KHAZRI SARRA", "https://portfolio-sara.herokuapp.com", "khazri.sarra.2@gmail.com"),
