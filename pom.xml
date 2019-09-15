@@ -3,14 +3,14 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<repositories>
 		<repository>
-			<id>spring-milestones</id>
-			<url>https://repo.spring.io/milestone</url>
+			<id>spring-releases</id>
+			<url>http://repo.spring.io/libs-release</url>
 		</repository>
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
-			<id>spring-milestones</id>
-			<url>https://repo.spring.io/milestone</url>
+			<id>spring-releases</id>
+			<url>http://repo.spring.io/libs-release</url>
 		</pluginRepository>
 	</pluginRepositories>
 	<modelVersion>4.0.0</modelVersion>
